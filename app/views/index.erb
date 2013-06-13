@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>User Skills and Levels</h1>
+    <% @users.each do |user| %>
+    <% @skills.each do |skill| %>
+    <ul>
+      <li><a href="/user/<%=user.id%>"><%= user.name %></li>
+        ul>
+            <li><%= skill.name %></li>
+        </ul>
+    </ul>
+    <% end %>
+    <% end %>
+  <%# TODO: display the skills and proficiency levels for each user ... %>
+</div>
